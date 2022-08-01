@@ -1,0 +1,2 @@
+# cyberdeck
+A cyberdeck is a piece of technology used in Cyberpunk 2013, Cyberpunk 2020, Cyberpunk RED and Cyberpunk 2077. A standard cyberdeck is about the size of a paperback book, is made of plastic and weighs about half a kilogram. It features six (6) interface ports for adding additional options, and (6) output ports for "jacking in" other people (who are considered "passengers", as the owner of the deck is the only user able to take control of the unit). Every Netrunner starts their career with the standard deck.
