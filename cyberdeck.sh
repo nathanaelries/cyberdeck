@@ -1,5 +1,6 @@
 #!/bin/bash
-for pkgName in $(curl https://raw.githubusercontent.com/nathanaelries/cyberdeck/main/packages.txt)
+wget https://raw.githubusercontent.com/nathanaelries/cyberdeck/main/packages.txt
+for pkgName in $(cat packages.txt)
 
 do
   pacman -S --force --noconfirm $pkgName
