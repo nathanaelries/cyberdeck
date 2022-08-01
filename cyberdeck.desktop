@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Name=Install EmuDeck
+Name=Install cyberdeck
 Exec=curl https://raw.githubusercontent.com/nathanaelries/cyberdeck/main/cyberdeck.sh | bash -s -- INTERNAL
 Icon=steamdeck-gaming-return
 Terminal=true
