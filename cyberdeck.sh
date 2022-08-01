@@ -11,19 +11,6 @@ rm ~/cyberdeck.log 2>/dev/null
 rm -rf ~/cyberdeck
 mkdir -p ~/cyberdeck
 
-#Creating log file
-echo "" > ~/cyberdeck/cyberdeck.log
-LOGFILE=~/cyberdeck/cyberdeck.log
-exec > >(tee ${LOGFILE}) 2>&1
-
-#Mark if this not a fresh install
-FOLDER=~/cyberdeck/
-if [ -d "$FOLDER" ]; then
-	echo "" > ~/cyberdeck/.finished
-fi
-sleep 1
-SECONDTIME=~/cyberdeck/.finished
-
 #We create all the needed folders for installation
 cd ~/cyberdeck
 
@@ -36,7 +23,7 @@ git clone https://github.com/nathanaelries/cyberdeck.git ~/cyberdeck
 ##
 #
 
-for pkgName in $(cat ~/cyberdeck/main/packages.txt)
+for pkgName in $(cat ~/cyberdeck/packages.txt)
 
 do
   pacman -S --force --noconfirm $pkgName
